@@ -1,0 +1,42 @@
+Table Donor {
+  donor_id int [pk, increment]
+  name varchar
+  age int
+  blood_group varchar
+  phone varchar
+}
+
+Table Blood {
+  blood_id int [pk, increment]
+  blood_group varchar
+  quantity int
+  expiry_date date
+  status varchar
+}
+
+Table BloodBank {
+  bank_id int [pk, increment]
+  name varchar
+  location varchar
+  contact varchar
+}
+
+Table Patient {
+  patient_id int [pk, increment]
+  name varchar
+  age int
+  blood_group varchar
+  phone varchar
+}
+
+Table BloodDonation {
+  donation_id int [pk, increment]
+  donor_id int
+  blood_id int
+  quantity int
+  donation_date date
+}
+
+Ref: BloodDonation.donor_id > Donor.donor_id
+Ref: BloodDonation.blood_id > Blood.blood_id
+Ref: BloodBank.bank_id < BloodDonation.donation_id

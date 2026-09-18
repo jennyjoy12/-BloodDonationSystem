@@ -1,0 +1,350 @@
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: #f5f5f5;
+}
+
+/* Navbar */
+nav {
+  background: #111111;
+  color: white;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #292929;
+}
+
+nav h2 {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+nav div {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #cccccc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff3b3b;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  min-height: 500px;
+  background: radial-gradient(
+    circle at center,
+    #351010 0%,
+    #0d0d0d 65%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 60px;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 25px;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 35px;
+  color: #aaaaaa;
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+.hero button {
+  border: 1px solid #ff3b3b;
+  padding: 14px 28px;
+  margin: 8px;
+  border-radius: 8px;
+  background: #e32626;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #ff4a4a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 50, 50, 0.25);
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 70px 30px;
+  background: #0d0d0d;
+}
+
+.cards div {
+  background: #161616;
+  width: 280px;
+  padding: 32px;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #292929;
+  transition: 0.3s;
+}
+
+.cards div:hover {
+  transform: translateY(-6px);
+  border-color: #e32626;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.cards h2 {
+  color: #ff4a4a;
+  margin-bottom: 15px;
+}
+
+.cards p {
+  color: #999999;
+  line-height: 1.6;
+}
+
+/* Donor Registration */
+.registration {
+  width: 450px;
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 35px;
+  background: #161616;
+  border-radius: 14px;
+  border: 1px solid #292929;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+.registration h2 {
+  text-align: center;
+  color: #ff4a4a;
+  margin-bottom: 25px;
+}
+
+.registration input,
+.registration select {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 15px;
+  background: #0d0d0d;
+  color: white;
+  border: 1px solid #333333;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+.registration input:focus,
+.registration select:focus {
+  border-color: #e32626;
+}
+
+.registration button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 7px;
+  background: #e32626;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.registration button:hover {
+  background: #ff3b3b;
+}
+
+/* Emergency Blood Request */
+.emergency {
+  width: 450px;
+  max-width: 90%;
+  margin: 60px auto;
+  padding: 35px;
+  background: #161616;
+  border-radius: 14px;
+  border: 1px solid #e32626;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+  text-align: center;
+}
+
+.emergency h2 {
+  color: #ff4a4a;
+  margin-bottom: 15px;
+}
+
+.emergency p {
+  color: #999999;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.emergency input,
+.emergency select {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 15px;
+  background: #0d0d0d;
+  color: white;
+  border: 1px solid #333333;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+.emergency input:focus,
+.emergency select:focus {
+  border-color: #e32626;
+}
+
+.emergency button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 7px;
+  background: #e32626;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.emergency button:hover {
+  background: #ff3b3b;
+  transform: translateY(-2px);
+}
+
+/* Live Blood Status */
+.blood-status {
+  padding: 80px 30px;
+  text-align: center;
+  background: #0d0d0d;
+}
+
+.blood-status h2 {
+  font-size: 34px;
+  color: #ff4a4a;
+  margin-bottom: 10px;
+}
+
+.status-subtitle {
+  color: #888888;
+  margin-bottom: 40px;
+  font-size: 17px;
+}
+
+.blood-grid {
+  max-width: 950px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.blood-card {
+  padding: 28px;
+  background: #161616;
+  border-radius: 14px;
+  border: 1px solid #292929;
+  transition: 0.3s;
+}
+
+.blood-card:hover {
+  transform: translateY(-6px);
+  border-color: #e32626;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.blood-card h3 {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.blood-card p {
+  color: #dddddd;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.blood-card span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.available h3 {
+  color: #4ade80;
+}
+
+.low h3 {
+  color: #f59e0b;
+}
+
+.critical h3 {
+  color: #ef4444;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  nav {
+    padding: 18px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav div {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards div {
+    width: 90%;
+  }
+
+  .registration,
+  .emergency {
+    width: 90%;
+  }
+
+  .blood-grid {
+    grid-template-columns: 1fr;
+  }
+}
+```
